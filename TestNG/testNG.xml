@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MySuite">
+    <test name="Test">
+    <parameter name="login" value="raschesochkin@mail.ru"/>
+    <parameter name="pass" value="QWE456rty"/>
+    <parameter name="receiver" value="sinor.pomidor.09@mail.ru"/>
+    <parameter name="body" value="Hello, my friend!"/>
+    <parameter name="signature" value="\n\n\n--\nИван Иванов"/>
+        <classes>
+            <class name="com.epam.mentoring.webdriver.tests.MailBoxTest"/>
+            <class name="com.epam.mentoring.webdriver.tests.ContactsListTest"/>
+        </classes>
+    </test>
+
+</suite>
